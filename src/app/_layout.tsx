@@ -4,15 +4,31 @@ import { useColorScheme } from 'react-native';
 
 import { AnimatedSplashOverlay } from '@/components/animated-icon';
 import AppTabs from '@/components/app-tabs';
+import { SettingsProvider, useSettings } from '@/game/settings';
 
 SplashScreen.preventAutoHideAsync();
 
-export default function TabLayout() {
-  const colorScheme = useColorScheme();
+function LayoutContent() {
+  const systemScheme = useColorScheme();
+  const { settings } = useSettings();
+
+  const effectiveScheme =
+    settings.appearance === 'system'
+      ? systemScheme
+      : settings.appearance;
+
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+    <ThemeProvider value={effectiveScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <AnimatedSplashOverlay />
       <AppTabs />
     </ThemeProvider>
+  );
+}
+
+export default function TabLayout() {
+  return (
+    <SettingsProvider>
+      <LayoutContent />
+    </SettingsProvider>
   );
 }
