@@ -137,15 +137,15 @@ Explore the TANGO MASTER mobile application.
 
 **4×4 – Beginner / Quick Challenge**
 
-![4x4 Puzzle](assets/screenshots/game-4x4.png)
+![4x4 Puzzle](assets/screenshots/4X4.png)
 
 **6×6 – Standard Challenge**
 
-![6x6 Puzzle](assets/screenshots/game-6x6.png)
+![6x6 Puzzle](assets/screenshots/6X6.png)
 
 **8×8 – Advanced Challenge**
 
-![8x8 Puzzle](assets/screenshots/game-8x8.png)
+![8x8 Puzzle](assets/screenshots/8X8.png)
 
 The game includes interactive puzzle cells, progress tracking, hints, undo, reset, and new puzzle generation.
 ## 📌 Project Status
