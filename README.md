@@ -123,6 +123,31 @@ The test suite covers:
 
 **Previously verified:** 8 puzzle tests passed, 5 settings tests passed, and TypeScript verification completed with zero errors.
 
+## 📱 Application Screenshots
+
+Explore the TANGO MASTER mobile application.
+
+### 🏠 Home Screen
+![Uploading image.png…]()
+
+
+![Tango Master Home Screen](assets/screenshots/home-screen.png)
+
+### 🎮 Puzzle Gameplay
+
+**4×4 – Beginner / Quick Challenge**
+
+![4x4 Puzzle](assets/screenshots/game-4x4.png)
+
+**6×6 – Standard Challenge**
+
+![6x6 Puzzle](assets/screenshots/game-6x6.png)
+
+**8×8 – Advanced Challenge**
+
+![8x8 Puzzle](assets/screenshots/game-8x8.png)
+
+The game includes interactive puzzle cells, progress tracking, hints, undo, reset, and new puzzle generation.
 ## 📌 Project Status
 
 TANGO MASTER is an active project. The repository includes the game interface, puzzle engine, settings implementation, and automated tests.
