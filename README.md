@@ -1,56 +1,142 @@
-# Welcome to your Expo app 👋
+# 🌞 TANGO MASTER 🌙
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**Think. Solve. Master.**
 
-## Get started
+TANGO MASTER is a Sun-and-Moon logic puzzle game built with **React Native, Expo, and TypeScript**.
 
-1. Install dependencies
+Fill the grid with Suns ☀️ and Moons 🌙 while satisfying row, column, and adjacency rules.
 
-   ```bash
-   npm install
-   ```
+## ✨ Features
 
-2. Start the app
+- Three grid sizes: 4×4, 6×6, and 8×8.
+- Four difficulty levels: Easy, Medium, Hard, and Expert.
+- Procedural puzzle generation.
+- Puzzle solver and intelligent hint engine.
+- Live puzzle validation.
+- Sound effects and haptic feedback.
+- Dark, Light, and System appearance settings.
+- Persistent preferences and reset functionality.
 
-   ```bash
-   npx expo start
-   ```
+## 🎮 How to Play
 
-In the output, you'll find options to open the app in a
+Fill every cell with either a Sun or Moon.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Follow these five rules:
 
-You can start developing by editing the files inside the **src/app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+1. **Equal row counts:** Every row must contain equal numbers of Suns and Moons.
+2. **Equal column counts:** Every column must contain equal numbers of Suns and Moons.
+3. **No three identical symbols:** Never place three identical symbols consecutively, horizontally or vertically.
+4. **Equal (=):** Connected adjacent cells must contain identical symbols.
+5. **Cross (×):** Connected adjacent cells must contain opposite symbols.
 
-## Get a fresh project
+## 🛠️ Tech Stack
 
-When you're ready, run:
+- React Native
+- Expo SDK 58
+- Expo Router
+- React 19
+- TypeScript 6
+
+## 🚀 Getting Started
+
+### Requirements
+- Node.js and npm
+- Expo Go or Android emulator
+- Git
+
+### 1. Clone the repository
 
 ```bash
-npm run reset-project
+git clone https://github.com/SANKET-v47/TANGO-MASTER.git
+cd TANGO-MASTER
 ```
 
-This command will move the starter code to the **example** directory and create a blank **src/app** directory where you can start developing.
+### 2. Install dependencies
 
-### Other setup steps
+```bash
+npm install
+```
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+### 3. Start the application
 
-## Learn more
+```bash
+npx expo start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+Scan the QR code using Expo Go on your phone.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 📋 Available Commands
 
-## Join the community
+| Command | Description |
+|---|---|
+| `npm start` | Start Expo |
+| `npm run android` | Run Android |
+| `npm run ios` | Run iOS simulator |
+| `npm run web` | Run web version |
+| `npm test` | Run unit tests |
+| `npm run lint` | Run lint checks |
+| `npx tsc --noEmit` | TypeScript verification |
 
-Join our community of developers creating universal apps.
+## 📁 Project Structure
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```text
+TANGO-MASTER/
+├── assets/
+├── scripts/
+├── src/
+│   ├── app/
+│   ├── components/
+│   │   ├── game/
+│   │   └── settings/
+│   └── game/
+│       ├── __tests__/
+│       ├── audio.ts
+│       ├── colors.ts
+│       ├── generator.ts
+│       ├── settings.ts
+│       ├── solver.ts
+│       ├── types.ts
+│       ├── use-game-state.ts
+│       └── validation.ts
+├── app.json
+├── package.json
+└── tsconfig.json
+```
+
+## 🧪 Testing
+
+Run:
+
+```bash
+npm test
+```
+
+The test suite covers:
+
+- Row and column symbol counts.
+- Consecutive-symbol restrictions.
+- Equal and Cross constraints.
+- 4×4, 6×6, and 8×8 board validation.
+- Procedural puzzle generation.
+- Solver and hint engine.
+- Settings persistence and reset functionality.
+
+**Previously verified:** 8 puzzle tests passed, 5 settings tests passed, and TypeScript verification completed with zero errors.
+
+## 📌 Project Status
+
+TANGO MASTER is an active project. The repository includes the game interface, puzzle engine, settings implementation, and automated tests.
+
+Contributions, bug reports, and suggestions are welcome.
+
+## 👨‍💻 Author
+
+**SANKET-v47**
+
+GitHub: [@SANKET-v47](https://github.com/SANKET-v47)
+
+Project: [TANGO MASTER](https://github.com/SANKET-v47/TANGO-MASTER)
+
+---
+
+*Made with React Native, Expo, and TypeScript.*
